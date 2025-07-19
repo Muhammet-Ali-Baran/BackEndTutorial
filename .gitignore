@@ -1,0 +1,17 @@
+# Build artifacts
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Rider (JetBrains) veya VS Code gibi IDE'ler
+.idea/
+.vscode/
