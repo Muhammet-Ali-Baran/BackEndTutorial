@@ -20,7 +20,7 @@ namespace api.Repository
 
         public async Task<Comment> CreateAsync(Comment commentModel)
         {
-            await _dbContext.AddAsync(commentModel);
+            await _dbContext.Comments.AddAsync(commentModel);
             await _dbContext.SaveChangesAsync();
             return commentModel;
         }
