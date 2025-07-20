@@ -72,7 +72,7 @@ namespace api.Controllers
             {
                 return NotFound();
             }
-            return NoContent();
+            return Ok("Successfully deleted!");
         }
     }
 }

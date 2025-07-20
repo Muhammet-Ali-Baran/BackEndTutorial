@@ -166,3 +166,7 @@ C:\Users\aliba\Desktop\FullStack\BackEndTutorial\api\bin\Debug\net9.0\Swashbuckl
 C:\Users\aliba\Desktop\FullStack\BackEndTutorial\api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\aliba\Desktop\FullStack\BackEndTutorial\api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\aliba\Desktop\FullStack\BackEndTutorial\api\obj\Debug\net9.0\api.sourcelink.json
+C:\Users\aliba\Desktop\FullStack\BackEndTutorial\api\bin\Debug\net9.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\aliba\Desktop\FullStack\BackEndTutorial\api\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\aliba\Desktop\FullStack\BackEndTutorial\api\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\aliba\Desktop\FullStack\BackEndTutorial\api\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
