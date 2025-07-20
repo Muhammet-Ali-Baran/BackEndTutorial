@@ -165,3 +165,4 @@ C:\Users\aliba\Desktop\FullStack\BackEndTutorial\api\bin\Debug\net9.0\runtimes\w
 C:\Users\aliba\Desktop\FullStack\BackEndTutorial\api\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\aliba\Desktop\FullStack\BackEndTutorial\api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\aliba\Desktop\FullStack\BackEndTutorial\api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\aliba\Desktop\FullStack\BackEndTutorial\api\obj\Debug\net9.0\api.sourcelink.json
