@@ -6,6 +6,7 @@ using api.Data;
 using api.Dtos.Comment;
 using api.Interfaces;
 using api.Mappers;
+using api.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace api.Controllers
@@ -48,21 +49,21 @@ namespace api.Controllers
             {
                 return BadRequest("Stock does not exist!");
             }
-            var commentModel = commentDto.ToCommentFromCreateDto(stockId);
+            var commentModel = commentDto.ToCommentFromCreate(stockId);
             await _commentRepository.CreateAsync(commentModel);
-            return CreatedAtAction(nameof(GetById),new {id=commentModel.Id},commentModel.ToCommentDto());
+            return CreatedAtAction(nameof(GetById), new { id = commentModel.Id }, commentModel.ToCommentDto());
         }
 
         [HttpPut]
         [Route("{id}")]
         public async Task<IActionResult> Update([FromRoute] int id, [FromBody] UpdateCommentRequestDto updateDto)
         {
-            var commentModel = await _commentRepository.UpdateAsync(id, updateDto);
-            if (commentModel == null)
+            var comment = await _commentRepository.UpdateAsync(id, updateDto.ToCommentFromUpdate());
+            if (comment == null)
             {
-                return NotFound();
+                return NotFound("Comment not found!");
             }
-            return Ok(commentModel.ToCommentDto());
+            return Ok(comment.ToCommentDto());
         }
 
         [HttpDelete]
@@ -72,7 +73,7 @@ namespace api.Controllers
             var commentModel = await _commentRepository.DeleteAsync(id);
             if (commentModel == null)
             {
-                return NotFound();
+                return NotFound("Comment does not exist!");
             }
             return Ok("Successfully deleted!");
         }
