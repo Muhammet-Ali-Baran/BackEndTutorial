@@ -47,7 +47,7 @@ options.TokenValidationParameters = new TokenValidationParameters
     ValidAudience = builder.Configuration["JWT:Audience"],
     ValidateIssuerSigningKey = true,
     IssuerSigningKey = new SymmetricSecurityKey(
-        System.Text.Encoding.UTF8.GetBytes(builder.Configuration["JWT:SigningKey"])
+        System.Text.Encoding.UTF8.GetBytes(builder.Configuration["JWT:SigningKey"]!)
     )
 });
 
@@ -65,9 +65,6 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
-app.UseAuthentication();
-app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
